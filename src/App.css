@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+div {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gradient__bg {
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 50%,
+    rgba(110, 160, 136, 1) 4%,
+    rgba(52, 103, 89, 1) 45%,
+    rgba(31, 64, 55, 1) 100%
+  );
+}
+
+.section__padding {
+  padding: 3rem 5rem;
+}
+
+.section__margin {
+  padding: 3rem 5rem;
+}
+
+@media (max-width: 50rem) {
+  .section__padding {
+    padding: 2rem;
+  }
+
+  .section__margin {
+    padding: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 30rem) {
+  .section__padding {
+    padding: 2rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section__margin {
+    padding: 2rem 1rem;
   }
 }
