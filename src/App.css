@@ -27,6 +27,9 @@ div {
     rgba(52, 103, 89, 1) 45%,
     rgba(31, 64, 55, 1) 100%
   );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 .gradient__text {
@@ -41,25 +44,25 @@ div {
 }
 
 .section__margin {
-  padding: 3rem 0.8rem;
+  margin: 3rem 0.8rem;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 57rem) {
   .section__padding {
     padding: 3rem 5rem;
   }
 
   .section__margin {
-    padding: 2rem;
+    margin: 2rem;
   }
 }
 
 @media (min-width: 30rem) {
   .section__padding {
-    padding: 2rem 2rem;
+    padding: 2rem 0.8rem;
   }
 
   .section__margin {
-    padding: 2rem 2rem;
+    margin: 2rem 2rem;
   }
 }

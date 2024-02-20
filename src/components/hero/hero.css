@@ -1,19 +1,25 @@
+.hero {
+  display: flex;
+  padding: 0rem 0.8rem;
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 79.5vh;
 }
 
 .hero__content h1 {
   font-size: 2rem;
+  max-width: 37rem;
 }
 
 .hero__content p {
-  color: rgb(209, 196, 175);
-  padding: 1rem 0;
+  color: rgb(218, 202, 177);
+  padding: 1rem 0 2.5rem 0;
+  max-width: 52rem;
 }
 
 .hero__content button {
@@ -26,4 +32,39 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.hero__payment {
+  display: flex;
+  color: rgb(218, 202, 177);
+  gap: 0.1rem;
+  margin-top: 1rem;
+}
+
+.hero__payment div {
+  margin-top: 0.1rem;
+}
+
+@media (min-width: 55rem) {
+  .hero__content {
+    padding-top: 5rem;
+  }
+  .hero__content h1 {
+    font-size: 3rem;
+  }
+  .hero__content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 45rem) and (max-width: 55rem) {
+  .hero__content {
+    padding-top: 5rem;
+  }
+  .hero__content h1 {
+    font-size: 2.1rem;
+  }
+  .hero__content p {
+    font-size: 1.3rem;
+  }
 }

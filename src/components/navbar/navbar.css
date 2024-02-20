@@ -1,5 +1,8 @@
 .navbar {
   display: flex;
+  position: fixed;
+  height: 5rem;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0.8rem;
@@ -95,7 +98,7 @@
   cursor: pointer;
 }
 
-@media screen and (min-width: 57rem) {
+@media (min-width: 57rem) {
   .navbar {
     padding: 1.5rem 5rem;
   }

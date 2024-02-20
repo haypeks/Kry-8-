@@ -1,0 +1,81 @@
+.chatbox__menu {
+  position: relative;
+}
+
+.chatbox__container {
+  background: white;
+  border-radius: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  margin-bottom: 8rem;
+  width: 22rem;
+}
+
+.chatbox__container-header {
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: #bb7956;
+}
+
+.chatbox__container-header h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-top: -1.5rem;
+}
+
+.chatbox__container-header p {
+  color: rgb(218, 202, 177);
+}
+
+.chatbox__container-header img {
+  margin: 0 auto;
+  width: 10rem;
+}
+
+.chatbox__icon {
+  color: #fff;
+  padding: 0.5rem;
+  background: #bb7956;
+  border-radius: 4rem;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+
+.chatbox__container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.chatbox__container input,
+.chatbox__container textarea {
+  padding: 0.3rem 1rem;
+  outline: none;
+  border-radius: 0.2rem;
+  border: 1px solid grey;
+}
+
+::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.chatbox__container button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #bb7956;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
