@@ -34,7 +34,7 @@
 
 .chatbox__container-header img {
   margin: 0 auto;
-  width: 10rem;
+  width: 8rem;
 }
 
 .chatbox__icon {
@@ -43,7 +43,7 @@
   background: #bb7956;
   border-radius: 4rem;
   position: fixed;
-  bottom: 5%;
+  bottom: 2%;
   right: 5%;
 }
 
@@ -74,7 +74,7 @@
   background: #bb7956;
   color: #fff;
   font-size: 1.2rem;
-  margin-top: 1rem;
+
   border: none;
   outline: none;
   cursor: pointer;

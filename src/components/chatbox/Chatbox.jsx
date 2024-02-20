@@ -15,13 +15,13 @@ const Chatbox = () => {
         {chatBox ? (
           <LiaTimesSolid
             class="chatbox__icon"
-            size={60}
+            size={55}
             onClick={() => setchatBox(false)}
           />
         ) : (
           <IoChatbubbleEllipsesOutline
             class="chatbox__icon"
-            size={60}
+            size={55}
             onClick={() => setchatBox(true)}
           />
         )}
