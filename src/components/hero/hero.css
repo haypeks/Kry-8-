@@ -1,0 +1,29 @@
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 79.5vh;
+}
+
+.hero__content h1 {
+  font-size: 2rem;
+}
+
+.hero__content p {
+  color: rgb(209, 196, 175);
+  padding: 1rem 0;
+}
+
+.hero__content button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+  background: #bb7956;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

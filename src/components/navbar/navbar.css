@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.8rem;
+  color: #fff;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar__links-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar__section-links {
+  display: none;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar__section-links li {
+  cursor: pointer;
+}
+
+.navbar__sign {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  letter-spacing: 0rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar__sign button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: #fff;
+  background: #bb7956;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  margin-left: 1rem;
+  position: relative;
+}
+
+.navbar__menu-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #346759;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  right: -0.8rem;
+  padding: 2rem 0.8rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar__menu_container-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navbar__menu_container-links li,
+.navbar__menu_container-links-sign {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar__menu_container-links-sign button {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #bb7956;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 57rem) {
+  .navbar {
+    padding: 1.5rem 5rem;
+  }
+
+  .navbar__sign {
+    display: flex;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__section-links {
+    display: flex;
+  }
+}

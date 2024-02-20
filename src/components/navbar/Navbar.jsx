@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import "./navbar.css";
@@ -14,47 +13,59 @@ const Navbar = () => {
 
     {
       id: 2,
-      link: "Kry-8 AI writer",
+      link: "AI Writer",
     },
 
     {
       id: 3,
-      link: "Creative",
+      link: "Features",
     },
 
     {
       id: 4,
-      link: "Testimonial",
+      link: "Pricing",
     },
     {
       id: 5,
-      link: "Pricing",
+      link: "FAQ",
     },
-
-    {
-        id: 6,
-        link: "FAQ",
-      },
   ];
   return (
     <div className="navbar">
-      <div>
-        <img src={logo} alt="kry-8 logo" />
-      </div>
       <div className="navbar__links">
-        
+        <div>
+          <p class="navbar__links-logo">Kry-8</p>
+        </div>
+        <div className="navbar__section-links">
+          {links.map(({ id, link }) => (
+            <li key={link.id}>{link}</li>
+          ))}
+        </div>
       </div>
       <div className="navbar__sign">
-        <p>Log in</p>
-        <button type="button">Get Started</button>
+        <p>Login</p>
+        <button class="btn" type="button">
+          Get Started
+        </button>
       </div>
       <div className="navbar__menu">
         {toggleMenu ? (
-          <FaTimes onClick={() => setToggleMenu(false)} />
+          <FaTimes size={44} onClick={() => setToggleMenu(false)} />
         ) : (
-          <GiHamburgerMenu onClick={() => setToggleMenu(true)} />
-        )} {toggleMenu && (
-
+          <GiHamburgerMenu size={44} onClick={() => setToggleMenu(true)} />
+        )}{" "}
+        {toggleMenu && (
+          <div className="navbar__menu-container">
+            <div className="navbar__menu_container-links">
+              {links.map(({ id, link }) => (
+                <li key={link.id}>{link}</li>
+              ))}
+            </div>
+            <div className="navbar__menu_container-links-sign">
+              <p>Login</p>
+              <button type="button">Get Started</button>
+            </div>
+          </div>
         )}
       </div>
     </div>
