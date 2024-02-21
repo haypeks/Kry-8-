@@ -9,6 +9,9 @@
   color: #fff;
 }
 
+.navbar-bg {
+  background: rgb(1, 57, 1);
+}
 .navbar__links {
   display: flex;
   align-items: center;
@@ -28,7 +31,7 @@
   font-weight: 500;
 }
 
-.navbar__section-links li {
+.navbar__section -links li {
   cursor: pointer;
 }
 

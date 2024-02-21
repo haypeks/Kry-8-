@@ -3,7 +3,9 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import "./App.css";
 import Chatbox from "./components/chatbox/Chatbox";
-import Craft from "./components/craft/Craft";
+import MarqueeCraft from "./components/marquee/MarqueeCraft";
+import Brand from "./components/brand/Brand";
+import Pricing from "./components/pricing/Pricing";
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
         <Hero />
         <Chatbox />
       </div>
-      <Craft />
+      <Brand />
+      <Pricing />
+      <MarqueeCraft />
     </div>
   );
 };

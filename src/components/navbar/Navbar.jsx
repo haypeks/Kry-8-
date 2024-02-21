@@ -5,6 +5,18 @@ import "./navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  // change nav color when scrolling
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 5) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
   const links = [
     {
       id: 1,
@@ -31,7 +43,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="navbar">
+    <div className={color ? "navbar navbar-bg" : "navbar"}>
       <div className="navbar__links">
         <div>
           <p class="navbar__links-logo">Kry-8</p>

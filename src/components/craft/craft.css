@@ -1,34 +1,21 @@
 .craft {
-  background-image: radial-gradient(
-    circle at 3% 50%,
-    rgb(60, 126, 95) 4%,
-    rgb(24, 76, 62) 45%,
-    rgba(31, 64, 55, 1) 100%
-  );
-  padding-top: 5rem;
-}
-
-.craft h1 {
-  font-size: 1.5ßrem;
-  text-align: center;
-}
-
-.marquee {
-  padding: 5rem 0;
-}
-
-.marquee__craft {
   display: flex;
   padding: 1rem 2rem;
   background: #f1f1f1;
   margin: 0 2rem;
   gap: 1rem;
-  color: rgb(218, 202, 177);
+  color: #c1a881;
   border-radius: 0.5rem;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
 }
 
-.marquee__icon {
+.craft__icon {
   margin-top: 0.3rem;
+}
+
+@media (min-width: 45rem) {
+  .craft {
+    font-size: 1.4rem;
+  }
 }
