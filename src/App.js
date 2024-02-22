@@ -8,6 +8,7 @@ import Brand from "./components/brand/Brand";
 import Pricing from "./components/pricing/Pricing";
 import Footer from "./components/footer/Footer";
 import Writer from "./components/writer/Writer";
+import Features from "./components/features/Features";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       </div>
       <Brand />
       <Writer />
+      <Features />
       <Pricing />
       <MarqueeCraft />
       <Footer />

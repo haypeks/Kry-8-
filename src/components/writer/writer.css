@@ -1,0 +1,49 @@
+.writer {
+  background: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1.5rem;
+}
+
+.writer__card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.writer h1 {
+  text-align: center;
+}
+
+.writer p {
+  text-align: center;
+  padding: 2rem;
+  color: var(--primary-text);
+}
+
+@media (min-width: 60rem) {
+  .writer {
+    background: var(--primary-bg);
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .writer__header {
+    width: 100%;
+    align-self: center;
+  }
+
+  .writer__card {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .writer p {
+    padding: 1rem 0;
+  }
+
+  .writer h1 {
+    font-size: 2.5rem;
+  }
+}

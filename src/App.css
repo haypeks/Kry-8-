@@ -44,11 +44,11 @@ div {
 }
 
 .section__padding {
-  padding: 3rem 0.8rem;
+  padding: 3rem 1.5rem;
 }
 
 .section__margin {
-  margin: 3rem 0.8rem;
+  margin: 3rem 1.5rem;
 }
 
 @media (min-width: 57rem) {
