@@ -1,9 +1,12 @@
 .pricing {
   background: rgb(15, 37, 24);
+  padding-bottom: 6rem;
 }
 
 .pricing h1 {
   text-align: center;
+  font-size: 2.5rem;
+  padding-top: 2rem;
 }
 
 .pricing__container {
@@ -11,7 +14,8 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 5rem;
-  gap: 2rem;
+  row-gap: 3.5rem;
+  column-gap: 2rem;
   align-items: center;
 }
 
@@ -20,10 +24,15 @@
   flex-direction: column;
   justify-content: center;
   background: #ffffff;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
   border-radius: 0.5rem;
   width: 100%;
-  color: #bb7956;
+  color: var(--secondary-text);
+  cursor: pointer;
+}
+
+.pricing__card:hover {
+  border: 1px solid green;
 }
 
 .pricing__card h2 {
@@ -46,7 +55,7 @@
   flex-direction: column;
   border-top: 1px solid #bb7956;
   margin-top: 1rem;
-  padding-top: 2rem;
+  padding: 2rem 1.5rem 0 1.5rem;
   gap: 1.5rem;
 }
 
@@ -55,15 +64,25 @@
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
-  background: #bb7956;
+  background: var(--secondary-text);
   margin-top: 2rem;
   outline: none;
   border: none;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 @media (min-width: 47rem) {
   .pricing__container {
     flex-wrap: nowrap;
+  }
+
+  .basic,
+  .unlimited {
+    margin-top: 5rem;
+  }
+
+  .pro {
+    margin-top: -5rem;
   }
 }

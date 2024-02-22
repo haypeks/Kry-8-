@@ -20,7 +20,7 @@
   border-top-left-radius: 0.5rem;
   padding: 1rem 2rem;
   text-align: center;
-  background: #bb7956;
+  background: var(--secondary-text);
 }
 
 .chatbox__container-header h3 {
@@ -30,7 +30,7 @@
 }
 
 .chatbox__container-header p {
-  color: rgb(218, 202, 177);
+  color: var(--primary-text);
 }
 
 .chatbox__container-header img {
@@ -41,9 +41,10 @@
 .chatbox__icon {
   color: #fff;
   padding: 0.5rem;
-  background: #bb7956;
+  background: var(--secondary-text);
   border-radius: 4rem;
   position: fixed;
+  cursor: pointer;
   bottom: 2%;
   right: 5%;
   z-index: 9;
@@ -73,10 +74,9 @@
 .chatbox__container button {
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
-  background: #bb7956;
+  background: var(--secondary-text);
   color: #fff;
   font-size: 1.2rem;
-
   border: none;
   outline: none;
   cursor: pointer;

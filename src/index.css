@@ -2,6 +2,18 @@
 
 :root {
   --font-family: "Poppins", sans-serif;
-
   --gradient-text: linear-gradient(89.97deg, #b6dfdf 1.24%, #d49675 102.67%);
+
+  --primary-text: hsl(37, 36%, 77%);
+  --secondary-text: hsl(21, 43%, 44%);
+  --primary-bg: hsl(145, 42%, 10%);
+  --secondary-bg: hsl(147, 22%, 8%);
 }
+
+/* 
+{
+    /* global 94%+ browsers support */
+    background: linear-gradient(359deg, rgba(15, 36, 24, 1) 21%, rgba(26, 60, 40, 1) 49%, rgba(15, 36, 24, 1) 72%);
+}
+
+*/

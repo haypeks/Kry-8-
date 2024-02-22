@@ -13,6 +13,13 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
 div {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -27,9 +34,6 @@ div {
     rgb(44, 93, 80) 35%,
     rgb(24, 57, 48) 100%
   );
-  height: 100vh;
-  display: flex;
-  justify-content: center;
 }
 
 .gradient__text {
@@ -49,7 +53,7 @@ div {
 
 @media (min-width: 57rem) {
   .section__padding {
-    padding: 2rem 5rem;
+    padding: 3rem 5rem;
   }
 
   .section__margin {

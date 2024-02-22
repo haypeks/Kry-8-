@@ -4,7 +4,7 @@ import "./pricing.css";
 
 const Pricing = () => {
   return (
-    <div className="pricing section__padding">
+    <div className="pricing section__padding" id="#pricing">
       <h1 className="gradient__text">Plan & Pricing</h1>
       <div className="pricing__container">
         <div className="pricing__card basic">
@@ -14,28 +14,32 @@ const Pricing = () => {
           </p>
           <div className="pricing__props">
             <p>
-              <IoMdCheckmark /> LLM Agnostic Model
+              <IoMdCheckmark className="pricing__checkmark" /> LLM Agnostic
+              Model
             </p>
             <p>
-              <IoMdCheckmark /> 10,000words/month
+              <IoMdCheckmark className="pricing__checkmark" /> 10,000words/month
             </p>
             <p>
-              <IoMdCheckmark /> AI Article Writer 4.o
+              <IoMdCheckmark className="pricing__checkmark" /> AI Article Writer
+              4.o
             </p>
             <p>
-              <IoMdCheckmark /> Complete Article Rewriter
+              <IoMdCheckmark className="pricing__checkmark" /> Complete Article
+              Rewriter
             </p>
             <p>
-              <IoMdCheckmark /> 30 Languages
+              <IoMdCheckmark className="pricing__checkmark" /> 30 Languages
             </p>
             <p>
-              <IoMdCheckmark /> 100+ AI Templates
+              <IoMdCheckmark className="pricing__checkmark" /> 100+ AI Templates
             </p>
             <p>
-              <IoMdCheckmark /> ChatGPT-like chatbot
+              <IoMdCheckmark className="pricing__checkmark" /> ChatGPT-like
+              chatbot
             </p>
+            <button type="button">Get Started</button>
           </div>
-          <button type="button">Get Started</button>
         </div>
 
         <div className="pricing__card pro">
@@ -45,28 +49,32 @@ const Pricing = () => {
           </p>
           <div className="pricing__props">
             <p>
-              <IoMdCheckmark /> LLM Agnostic Model
+              <IoMdCheckmark className="pricing__checkmark" /> LLM Agnostic
+              Model
             </p>
             <p>
-              <IoMdCheckmark /> 10,000words/month
+              <IoMdCheckmark className="pricing__checkmark" /> 10,000words/month
             </p>
             <p>
-              <IoMdCheckmark /> AI Article Writer 4.o
+              <IoMdCheckmark className="pricing__checkmark" /> AI Article Writer
+              4.o
             </p>
             <p>
-              <IoMdCheckmark /> Complete Article Rewriter
+              <IoMdCheckmark className="pricing__checkmark" /> Complete Article
+              Rewriter
             </p>
             <p>
-              <IoMdCheckmark /> 30 Languages
+              <IoMdCheckmark className="pricing__checkmark" /> 30 Languages
             </p>
             <p>
-              <IoMdCheckmark /> 100+ AI Templates
+              <IoMdCheckmark className="pricing__checkmark" /> 100+ AI Templates
             </p>
             <p>
-              <IoMdCheckmark /> ChatGPT-like chatbot
+              <IoMdCheckmark className="pricing__checkmark" /> ChatGPT-like
+              chatbot
             </p>
+            <button type="button">Buy Now</button>
           </div>
-          <button type="button">Buy Now</button>
         </div>
 
         <div className="pricing__card unlimited">
@@ -76,28 +84,32 @@ const Pricing = () => {
           </p>
           <div className="pricing__props">
             <p>
-              <IoMdCheckmark /> LLM Agnostic Model
+              <IoMdCheckmark className="pricing__checkmark" /> LLM Agnostic
+              Model
             </p>
             <p>
-              <IoMdCheckmark /> 10,000words/month
+              <IoMdCheckmark className="pricing__checkmark" /> 10,000words/month
             </p>
             <p>
-              <IoMdCheckmark /> AI Article Writer 4.o
+              <IoMdCheckmark className="pricing__checkmark" /> AI Article Writer
+              4.o
             </p>
             <p>
-              <IoMdCheckmark /> Complete Article Rewriter
+              <IoMdCheckmark className="pricing__checkmark" /> Complete Article
+              Rewriter
             </p>
             <p>
-              <IoMdCheckmark /> 30 Languages
+              <IoMdCheckmark className="pricing__checkmark" /> 30 Languages
             </p>
             <p>
-              <IoMdCheckmark /> 100+ AI Templates
+              <IoMdCheckmark className="pricing__checkmark" /> 100+ AI Templates
             </p>
             <p>
-              <IoMdCheckmark /> ChatGPT-like chatbot
+              <IoMdCheckmark className="pricing__checkmark" /> ChatGPT-like
+              chatbot
             </p>
+            <button type="button">Buy Now</button>
           </div>
-          <button type="button">Buy Now</button>
         </div>
       </div>
     </div>

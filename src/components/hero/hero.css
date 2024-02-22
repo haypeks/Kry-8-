@@ -1,12 +1,13 @@
 .hero {
-  display: flex;
   padding: 0rem 0.8rem;
+  height: 90vh;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
   align-items: center;
   text-align: center;
 }
@@ -17,7 +18,7 @@
 }
 
 .hero__content p {
-  color: rgb(218, 202, 177);
+  color: var(--primary-text);
   padding: 1rem 0 2.5rem 0;
   max-width: 52rem;
 }
@@ -27,7 +28,7 @@
   border-radius: 0.5rem;
   font-weight: 600;
   color: #fff;
-  background: #bb7956;
+  background: var(--secondary-text);
   font-size: 1.2rem;
   border: none;
   outline: none;
@@ -36,7 +37,7 @@
 
 .hero__payment {
   display: flex;
-  color: rgb(218, 202, 177);
+  color: var(--primary-text);
   gap: 0.1rem;
   margin-top: 1rem;
 }

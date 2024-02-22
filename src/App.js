@@ -6,6 +6,8 @@ import Chatbox from "./components/chatbox/Chatbox";
 import MarqueeCraft from "./components/marquee/MarqueeCraft";
 import Brand from "./components/brand/Brand";
 import Pricing from "./components/pricing/Pricing";
+import Footer from "./components/footer/Footer";
+import Writer from "./components/writer/Writer";
 
 const App = () => {
   return (
@@ -16,8 +18,10 @@ const App = () => {
         <Chatbox />
       </div>
       <Brand />
+      <Writer />
       <Pricing />
       <MarqueeCraft />
+      <Footer />
     </div>
   );
 };

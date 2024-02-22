@@ -1,5 +1,5 @@
 .marquee__craft {
-  background: rgb(16, 25, 20);
+  background: var(--secondary-bg);
 }
 
 .marquee {

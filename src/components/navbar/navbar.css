@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0.8rem;
+  z-index: 9999;
   color: #fff;
 }
 
@@ -31,7 +32,7 @@
   font-weight: 500;
 }
 
-.navbar__section -links li {
+.navbar__section-links li {
   cursor: pointer;
 }
 
@@ -50,7 +51,7 @@
   border-radius: 0.5rem;
   font-weight: 600;
   color: #fff;
-  background: #bb7956;
+  background: var(--secondary-text);
   font-size: 1rem;
   border: none;
   outline: none;
@@ -89,10 +90,15 @@
   font-weight: 500;
 }
 
+.navbar__menu_container-links-sign p,
+.navbar__sign p {
+  cursor: pointer;
+}
+
 .navbar__menu_container-links-sign button {
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
-  background: #bb7956;
+  background: var(--secondary-text);
   color: #fff;
   font-size: 1.2rem;
   margin-top: 1.5rem;
