@@ -70,13 +70,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background: #346759;
+  background: var(--secondary-bg);
   gap: 1.5rem;
   margin-top: 0.8rem;
   right: -0.8rem;
   padding: 2rem 0.8rem;
   width: 100vw;
   height: 100vh;
+  color: var(--primary-text);
 }
 
 .navbar__menu_container-links {
