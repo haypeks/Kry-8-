@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaTwitter, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
@@ -10,7 +11,11 @@ const Footer = () => {
         <h1 className="gradient__text">
           Elevate Your Content Quality and Cut Costs
         </h1>
-        <button type="button">Get Started</button>
+        <button type="button">
+          <Link to="/signin" className="link">
+            Get Started
+          </Link>
+        </button>
       </div>
       <div className="footer__flex">
         <div className="footer__flex__one">

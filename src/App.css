@@ -26,6 +26,10 @@ div {
   font-style: normal;
 }
 
+.link {
+  color: #fff;
+}
+
 .gradient__bg {
   /* global 92%+ browsers support */
   background: radial-gradient(
@@ -44,7 +48,7 @@ div {
 }
 
 .section__padding {
-  padding: 3rem 1.5rem;
+  padding: 5rem 1.5rem;
 }
 
 .section__margin {

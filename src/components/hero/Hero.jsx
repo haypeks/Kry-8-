@@ -1,10 +1,11 @@
 import React from "react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import "./hero.css";
 
 const Hero = () => {
   return (
-    <div id="hero" className="hero">
+    <div name="Home" className="hero">
       <div className="hero__content">
         <h1 className="gradient__text">
           Elevate Your Writing with Precision and Ease
@@ -16,7 +17,11 @@ const Hero = () => {
           writing experience. Your words, our expertise – a seamless partnership
           for unparalleled writing excellence.
         </p>
-        <button type="button">Get Started</button>
+        <button type="button">
+          <Link to="/signin" className="link">
+            Get Started
+          </Link>
+        </button>
         <div className="hero__payment">
           <div>
             <IoCheckmarkCircleOutline />

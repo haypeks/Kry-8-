@@ -1,12 +1,26 @@
 import React from "react";
-
 import AiCard from "../ai-card/AiCard";
 import { MdEmail, MdArticle } from "react-icons/md";
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { RiArticleLine } from "react-icons/ri";
 import { IoShareSocialSharp } from "react-icons/io5";
-
+import { motion } from "framer-motion";
 import "./writer.css";
+
+const fadeInVariants = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.1,
+      duration: 1,
+    },
+  },
+};
 
 const Writer = () => {
   return (
@@ -18,7 +32,12 @@ const Writer = () => {
           effortlessly with the assistance of our AI text generator
         </p>
       </div>
-      <div className="writer__card">
+      <motion.div
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        className="writer__card"
+      >
         <AiCard
           icon={<MdArticle />}
           heading="Article Rewrite"
@@ -51,7 +70,7 @@ const Writer = () => {
           heading="Proofread"
           text="eview and refine your writing, eliminating any grammar and spelling mistakes."
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

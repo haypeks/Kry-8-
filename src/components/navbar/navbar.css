@@ -41,8 +41,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  letter-spacing: 0rem;
-  font-size: 0rem;
+  font-size: 1rem;
   font-weight: 500;
   z-index: 9;
 }
@@ -62,6 +61,11 @@
 .navbar__menu {
   margin-left: 1rem;
   position: relative;
+}
+
+.navbar__section-links a,
+.link {
+  color: #fff;
 }
 
 .navbar__menu-container {

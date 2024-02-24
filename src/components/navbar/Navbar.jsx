@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -21,43 +22,56 @@ const Navbar = () => {
     {
       id: 1,
       link: "Home",
+      href: "/",
     },
 
     {
       id: 2,
       link: "AI Writer",
+      href: "https://kry-8.netlify.app/#writer",
     },
 
     {
       id: 3,
       link: "Features",
+      href: "https://kry-8.netlify.app/#features",
     },
 
     {
       id: 4,
       link: "Pricing",
-    },
-    {
-      id: 5,
-      link: "FAQ",
+      href: "https://kry-8.netlify.app/#pricing",
     },
   ];
   return (
     <div className={color ? "navbar navbar-bg" : "navbar"}>
       <div className="navbar__links">
         <div>
-          <p class="navbar__links-logo">Kry-8</p>
+          <p class="navbar__links-logo">
+            <NavLink className="link" to="/">
+              Kry-8
+            </NavLink>
+          </p>
         </div>
         <div className="navbar__section-links">
-          {links.map(({ id, link }) => (
-            <li key={link.id}>{link}</li>
+          {links.map(({ id, link, href }) => (
+            <li key={link.id}>
+              <a href={href}>{link}</a>
+            </li>
           ))}
         </div>
       </div>
+
       <div className="navbar__sign">
-        <p>Login</p>
+        <p>
+          <NavLink className="link" to="/signin">
+            Sign in
+          </NavLink>
+        </p>
         <button class="btn" type="button">
-          Get Started
+          <NavLink className="link" to="/signup">
+            Get Started
+          </NavLink>
         </button>
       </div>
       <div className="navbar__menu">

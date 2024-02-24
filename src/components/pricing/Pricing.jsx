@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IoMdCheckmark } from "react-icons/io";
 import "./pricing.css";
 
 const Pricing = () => {
   return (
-    <div className="pricing section__padding" id="#pricing">
+    <div className="pricing section__padding" id="pricing">
       <h1 className="gradient__text">Plan & Pricing</h1>
       <div className="pricing__container">
         <div className="pricing__card basic">
@@ -39,7 +40,11 @@ const Pricing = () => {
               <IoMdCheckmark className="pricing__checkmark" /> ChatGPT-like
               chatbot
             </p>
-            <button type="button">Buy Now</button>
+            <button type="button">
+              <Link to="/signin" className="link">
+                Get Started
+              </Link>
+            </button>
           </div>
         </div>
 
@@ -74,7 +79,11 @@ const Pricing = () => {
               <IoMdCheckmark className="pricing__checkmark" />
               Bulk Processing
             </p>
-            <button type="button">Get Started</button>
+            <button type="button">
+              <Link to="/signin" className="link">
+                Buy Now
+              </Link>
+            </button>
           </div>
         </div>
 
@@ -107,7 +116,11 @@ const Pricing = () => {
               <IoMdCheckmark className="pricing__checkmark" /> Workspace
               analytics
             </p>
-            <button type="button">Buy Now</button>
+            <button type="button">
+              <Link to="/signin" className="link">
+                Buy Now
+              </Link>
+            </button>
           </div>
         </div>
       </div>

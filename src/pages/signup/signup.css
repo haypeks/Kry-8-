@@ -1,0 +1,79 @@
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup__container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 0.5rem;
+  gap: 1.2rem;
+  padding: 2rem 1.5rem;
+}
+
+.signup__container h1 {
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.signup__container p {
+  text-align: center;
+}
+
+.signup__container input {
+  border-radius: 0.2rem;
+  outline: none;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.signup__container button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--secondary-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.signup__container button p {
+  font-size: 1rem;
+  padding-left: 1.2rem;
+}
+
+.google {
+  background: #fff;
+  padding: 0.25rem;
+  position: absolute;
+  left: 5%;
+}
+
+.arrow__right {
+  padding-left: 0.5rem;
+}
+
+.signup__container-continue {
+  border: 1px solid rgb(209, 208, 208);
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+}
+
+.signup__container span a {
+  color: var(--secondary-text);
+  font-weight: 700;
+  padding: 0 0.3rem;
+  cursor: pointer;
+}
