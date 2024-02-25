@@ -29,41 +29,43 @@ const fadeInVariants = {
 
 const Brand = () => {
   return (
-    <motion.di
-      variants={fadeInVariants}
-      initial="hidden"
-      whileInView="visible"
-      className="brand section__padding"
-    >
-      <div>
-        <img src={google} alt="" />
-      </div>
-      <div>
-        <img src={facebook} alt="" />
-      </div>
-      <div>
-        <img src={yamaha} alt="" />
-      </div>
-      <div>
-        <img src={youtube} alt="" />
-      </div>
+    <div className="brand section__padding">
+      <motion.div
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        className="brand__container"
+      >
+        <div>
+          <img src={google} alt="" />
+        </div>
+        <div>
+          <img src={facebook} alt="" />
+        </div>
+        <div>
+          <img src={yamaha} alt="" />
+        </div>
+        <div>
+          <img src={youtube} alt="" />
+        </div>
 
-      <div>
-        <img src={office365} alt="" />
-      </div>
-      <div>
-        <img src={amazon} alt="" />
-      </div>
-      <div>
-        <img src={netflix} alt="" />
-      </div>
-      <div>
-        <img src={oracle} alt="" />
-      </div>
-      <div>
-        <img src={linkedin} alt="" />
-      </div>
-    </motion.di>
+        <div>
+          <img src={office365} alt="" />
+        </div>
+        <div>
+          <img src={amazon} alt="" />
+        </div>
+        <div>
+          <img src={netflix} alt="" />
+        </div>
+        <div>
+          <img src={oracle} alt="" />
+        </div>
+        <div>
+          <img src={linkedin} alt="" />
+        </div>
+      </motion.div>
+    </div>
   );
 };
 

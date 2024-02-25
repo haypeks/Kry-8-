@@ -9,6 +9,7 @@ import {
   Pricing,
   MarqueeCraft,
   Footer,
+  FAQ,
 } from "../../components/index";
 
 const Homepage = () => {
@@ -27,6 +28,7 @@ const Homepage = () => {
       <Writer />
       <Features />
       <Pricing />
+      <FAQ />
       <MarqueeCraft />
       <Footer />
     </motion.div>

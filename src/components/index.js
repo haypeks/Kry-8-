@@ -7,3 +7,4 @@ export { default as Features } from "./features/Features";
 export { default as Pricing } from "./pricing/Pricing";
 export { default as MarqueeCraft } from "./marquee/MarqueeCraft";
 export { default as Footer } from "./footer/Footer";
+export { default as FAQ } from "./faq/FAQ";

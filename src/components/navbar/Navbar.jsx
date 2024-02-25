@@ -49,6 +49,12 @@ const Navbar = () => {
       link: "Pricing",
       href: "https://kry-8.netlify.app/#pricing",
     },
+
+    {
+      id: 5,
+      link: "FAQ",
+      href: "https://kry-8.netlify.app/#faq",
+    },
   ];
   return (
     <div className={color ? "navbar navbar-bg" : "navbar"}>

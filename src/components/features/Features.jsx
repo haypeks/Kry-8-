@@ -20,7 +20,7 @@ const fadeInVariants = {
 
 const Features = () => {
   return (
-    <div className="features section__padding gradient__bg" id="features">
+    <div className="features section__padding" id="features">
       <div>
         <h1 className="gradient__text">
           The potential extends far beyond what you can envision

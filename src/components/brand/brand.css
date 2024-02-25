@@ -1,9 +1,12 @@
 .brand {
+  background-color: var(--secondary-bg);
+}
+
+.brand__container {
   display: flex;
   justify-content: center;
   column-gap: 2rem;
   flex-wrap: wrap;
-  background-color: var(--secondary-bg);
   margin-bottom: -1rem;
 }
 
