@@ -29,7 +29,7 @@ const Navbar = () => {
     {
       id: 1,
       link: "Home",
-      href: "/",
+      href: "https://kry-8.netlify.app/#home",
     },
 
     {

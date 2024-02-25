@@ -21,7 +21,7 @@ const fadeInVariants = {
 
 const Hero = () => {
   return (
-    <div name="Home" className="hero">
+    <div id="home" className="hero">
       <motion.div
         variants={fadeInVariants}
         initial="hidden"
