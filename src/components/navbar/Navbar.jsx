@@ -1,11 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./navbar.css";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const Location = useLocation();
+  useEffect(() => {
+    setToggleMenu(false);
+  }, [Location]);
 
   // change nav color when scrolling
   const [color, setColor] = useState(false);
@@ -55,41 +62,55 @@ const Navbar = () => {
         </div>
         <div className="navbar__section-links">
           {links.map(({ id, link, href }) => (
-            <li key={link.id}>
+            <motion.li
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.1 }}
+              key={link.id}
+            >
               <a href={href}>{link}</a>
-            </li>
+            </motion.li>
           ))}
         </div>
       </div>
 
       <div className="navbar__sign">
-        <p>
+        <motion.p initial={{ scale: 1 }} whileHover={{ scale: 1.1 }}>
           <NavLink className="link" to="/signin">
             Sign in
           </NavLink>
-        </p>
-        <button class="btn" type="button">
-          <NavLink className="link" to="/signup">
+        </motion.p>
+        <NavLink className="link" to="/signup">
+          <button class="btn" type="button">
             Get Started
-          </NavLink>
-        </button>
+          </button>
+        </NavLink>
       </div>
       <div className="navbar__menu">
         {toggleMenu ? (
           <FaTimes size={44} onClick={() => setToggleMenu(false)} />
         ) : (
           <GiHamburgerMenu size={44} onClick={() => setToggleMenu(true)} />
-        )}{" "}
+        )}
         {toggleMenu && (
           <div className="navbar__menu-container">
             <div className="navbar__menu_container-links">
-              {links.map(({ id, link }) => (
-                <li key={link.id}>{link}</li>
+              {links.map(({ id, link, href }) => (
+                <li key={link.id}>
+                  <a href={href}>{link}</a>
+                </li>
               ))}
-            </div>
-            <div className="navbar__menu_container-links-sign">
-              <p>Login</p>
-              <button type="button">Get Started</button>
+              <div className="navbar__menu_container-links-sign">
+                <p>
+                  <NavLink className="link" to="/signin">
+                    Sign in
+                  </NavLink>
+                </p>
+                <NavLink className="link" to="/signup">
+                  <button class="btn" type="button">
+                    Get Started
+                  </button>
+                </NavLink>
+              </div>
             </div>
           </div>
         )}

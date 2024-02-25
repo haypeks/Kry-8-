@@ -1,14 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { IoMdCheckmark } from "react-icons/io";
 import "./pricing.css";
+
+const fadeInVariants = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.1,
+      duration: 1,
+    },
+  },
+};
 
 const Pricing = () => {
   return (
     <div className="pricing section__padding" id="pricing">
       <h1 className="gradient__text">Plan & Pricing</h1>
-      <div className="pricing__container">
-        <div className="pricing__card basic">
+      <motion.div
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        className="pricing__container"
+      >
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.01, border: "5px solid hsl(21, 43%, 44%)" }}
+          className="pricing__card basic"
+        >
           <h2>Basic</h2>
           <p className="pricing__price">
             <span>$0</span> per month
@@ -40,15 +65,17 @@ const Pricing = () => {
               <IoMdCheckmark className="pricing__checkmark" /> ChatGPT-like
               chatbot
             </p>
-            <button type="button">
-              <Link to="/signin" className="link">
-                Get Started
-              </Link>
-            </button>
+            <Link to="/signin" className="link">
+              <button type="button">Get Started</button>
+            </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="pricing__card pro">
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.01, border: "5px solid hsl(21, 43%, 44%)" }}
+          className="pricing__card pro"
+        >
           <h2>Pro</h2>
           <p className="pricing__price">
             <span>$5</span> per month
@@ -79,15 +106,17 @@ const Pricing = () => {
               <IoMdCheckmark className="pricing__checkmark" />
               Bulk Processing
             </p>
-            <button type="button">
-              <Link to="/signin" className="link">
-                Buy Now
-              </Link>
-            </button>
+            <Link to="/signin" className="link">
+              <button type="button">Buy Now</button>
+            </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="pricing__card unlimited">
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.01, border: "5px solid hsl(21, 43%, 44%)" }}
+          className="pricing__card unlimited"
+        >
           <h2>Unlimited</h2>
           <p className="pricing__price">
             <span>$10</span> per month
@@ -116,14 +145,12 @@ const Pricing = () => {
               <IoMdCheckmark className="pricing__checkmark" /> Workspace
               analytics
             </p>
-            <button type="button">
-              <Link to="/signin" className="link">
-                Buy Now
-              </Link>
-            </button>
+            <Link to="/signin" className="link">
+              <button type="button">Buy Now</button>
+            </Link>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

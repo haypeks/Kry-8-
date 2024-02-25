@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   google,
   facebook,
@@ -12,9 +13,28 @@ import {
 } from "./imports";
 import "./brand.css";
 
+const fadeInVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+
+    transition: {
+      delay: 0.1,
+      duration: 1,
+    },
+  },
+};
+
 const Brand = () => {
   return (
-    <div className="brand section__padding">
+    <motion.di
+      variants={fadeInVariants}
+      initial="hidden"
+      whileInView="visible"
+      className="brand section__padding"
+    >
       <div>
         <img src={google} alt="" />
       </div>
@@ -43,7 +63,7 @@ const Brand = () => {
       <div>
         <img src={linkedin} alt="" />
       </div>
-    </div>
+    </motion.di>
   );
 };
 

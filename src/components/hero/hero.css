@@ -1,6 +1,7 @@
 .hero {
   padding: 0rem 0.8rem;
   height: 90vh;
+  overflow-x: hidden;
 }
 
 .hero__content {
@@ -29,10 +30,17 @@
   font-weight: 600;
   color: #fff;
   background: var(--secondary-text);
+  box-shadow: inset 0 0 0 rgb(255 255 255);
+  transition: ease-out 0.3s;
   font-size: 1.2rem;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.hero__content button:hover {
+  box-shadow: inset 30rem 0 0 rgb(255 255 255);
+  color: var(--secondary-text);
 }
 
 .hero__payment {

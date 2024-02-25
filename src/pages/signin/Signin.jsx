@@ -1,11 +1,16 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./signin.css";
 
 const Signin = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth }}
+    >
       <div className="gradient__bg signin section__padding">
         <div className="signin__container">
           <h1>Sign in your Kry-8 Account</h1>
@@ -24,7 +29,7 @@ const Signin = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

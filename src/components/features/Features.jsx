@@ -1,6 +1,22 @@
 import React from "react";
 import Feature from "../feature/Feature";
+import { motion } from "framer-motion";
 import "./features.css";
+
+const fadeInVariants = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.1,
+      duration: 1,
+    },
+  },
+};
 
 const Features = () => {
   return (
@@ -11,7 +27,12 @@ const Features = () => {
         </h1>
         <p className="features__discover">Discover our featured product</p>
       </div>
-      <div className="features__feature">
+      <motion.div
+        variants={fadeInVariants}
+        initial="hidden"
+        whileInView="visible"
+        className="features__feature"
+      >
         <Feature
           title="DesktopGPT"
           text="Meet DesktopGPT, the GPT extension tailored for your personal device. Download and seamlessly integrate to unlock effortless content creation. With DesktopGPT as your dedicated writing companion, creativity knows no bounds. Elevate your writing experience and transform your desktop into a hub of inspiration with DesktopGPT where seamless integration meets limitless creativity."
@@ -28,7 +49,7 @@ const Features = () => {
           Introducing Kry-8 Bypass, a cutting-edge feature that humanizes AI content to cleverly bypass detection systems. Seamlessly integrated across platforms, Kry-8 Bypass's advanced algorithms blur the lines between artificial and human-generated text, offering a revolutionary solution to evade AI detection. Embrace the future of undetectable content creation with Kry-8 Bypass."
           buttontext="Explore Kry-8 Bypass"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

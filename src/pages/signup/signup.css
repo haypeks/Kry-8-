@@ -37,6 +37,7 @@
   font-weight: bold;
   color: #fff;
   background: var(--secondary-text);
+
   display: flex;
   align-items: center;
   justify-content: center;

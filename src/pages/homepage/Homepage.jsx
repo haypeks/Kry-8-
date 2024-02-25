@@ -1,6 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
-  Navbar,
   Hero,
   Chatbox,
   Brand,
@@ -13,9 +13,13 @@ import {
 
 const Homepage = () => {
   return (
-    <div className="home">
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth }}
+      className="home"
+    >
       <div className="gradient__bg">
-        <Navbar />
         <Hero />
         <Chatbox />
       </div>
@@ -25,7 +29,7 @@ const Homepage = () => {
       <Pricing />
       <MarqueeCraft />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

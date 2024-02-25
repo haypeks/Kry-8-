@@ -11,11 +11,9 @@ const Footer = () => {
         <h1 className="gradient__text">
           Elevate Your Content Quality and Cut Costs
         </h1>
-        <button type="button">
-          <Link to="/signin" className="link">
-            Get Started
-          </Link>
-        </button>
+        <Link to="/signin" className="link">
+          <button type="button">Get Started</button>
+        </Link>
       </div>
       <div className="footer__flex">
         <div className="footer__flex__one">
