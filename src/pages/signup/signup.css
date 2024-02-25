@@ -31,13 +31,12 @@
   font-size: 0.8rem;
 }
 
-.signup__container button {
+.signup__btn {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
   background: var(--secondary-text);
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,19 +44,32 @@
   border: none;
   border-radius: 0.2rem;
   cursor: pointer;
-  position: relative;
+}
+
+.google__btn {
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background: var(--secondary-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 .signup__container button p {
   font-size: 1rem;
-  padding-left: 1.2rem;
 }
 
-.google {
+.signup__container .google {
   background: #fff;
-  padding: 0.25rem;
-  position: absolute;
-  left: 5%;
+  padding: 0.2rem;
+  position: static;
+  left: 0%;
 }
 
 .arrow__right {

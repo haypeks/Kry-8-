@@ -15,14 +15,15 @@ const Signup = () => {
     >
       <div className="signup__container">
         <h1>Create compelling content with ease.</h1>
-        <button>
-          <FcGoogle size={30} className="google" /> <p>Sign up with Google</p>
+        <button className="google__btn">
+          <FcGoogle size={30} className="google" />
+          <p>Sign up with Google</p>
           <FaArrowRight size={25} className="arrow__right" />
         </button>
         <p className="signup__container-continue">or continue with</p>
         <input type="text" placeholder="Email" />
         <input type="text" placeholder="Password" />
-        <button>Sign up</button>
+        <button className="signup__btn">Sign up</button>
         <p>
           Already have an account?
           <span>
