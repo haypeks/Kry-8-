@@ -64,9 +64,7 @@ const Demo = () => {
   };
   return (
     <div className="demo gradient__bg section__padding">
-      <h1 className="gradient__text demo__header ">
-        Summarize Articles with OpenAI
-      </h1>
+      <h1 className="gradient__text demo__header ">Summarize Articles</h1>
       <p className="demo__header-text">
         Make your reading easier with our summarization tool. This article
         summarizer simplifies lengthy articles into clear and concise summaries.
