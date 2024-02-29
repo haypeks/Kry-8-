@@ -10,7 +10,6 @@ import {
   MarqueeCraft,
   Footer,
   FAQ,
-  Summarizer,
   Demo,
 } from "../../components/index";
 

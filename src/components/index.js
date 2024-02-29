@@ -8,5 +8,4 @@ export { default as Pricing } from "./pricing/Pricing";
 export { default as MarqueeCraft } from "./marquee/MarqueeCraft";
 export { default as Footer } from "./footer/Footer";
 export { default as FAQ } from "./faq/FAQ";
-export { default as Summarizer } from "./summarizer/Summarizer";
 export { default as Demo } from "./demo/Demo";

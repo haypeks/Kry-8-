@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { MdOutlineLink } from "react-icons/md";
-import { FaArrowUp } from "react-icons/fa";
-import { FaRegCopy } from "react-icons/fa";
+import { FaArrowUp, FaRegCopy } from "react-icons/fa";
+import { IoMdCheckmark } from "react-icons/io";
 import loader from "../../assets/loader.svg";
 import { motion } from "framer-motion";
 import { useLazyGetSummaryQuery } from "../../services/article";
@@ -104,7 +104,11 @@ const Demo = () => {
                 className="link__card"
               >
                 <div className="url__copy" onClick={() => handleCopy(item.url)}>
-                  <FaRegCopy size={25} className="copy__icon" />
+                  {copied === item.url ? (
+                    <IoMdCheckmark size={25} className="copy__icon" />
+                  ) : (
+                    <FaRegCopy size={25} className="copy__icon" />
+                  )}
                   <p>{item.url}</p>
                 </div>
               </div>
