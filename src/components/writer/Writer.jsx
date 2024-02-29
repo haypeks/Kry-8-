@@ -24,7 +24,7 @@ const fadeInVariants = {
 
 const Writer = () => {
   return (
-    <div className="writer" id="writer">
+    <div className="writer section__padding" id="writer">
       <div className="writer__header">
         <h1 className="gradient__text">Save Time Your Content</h1>
         <p>

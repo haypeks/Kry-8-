@@ -10,6 +10,8 @@ import {
   MarqueeCraft,
   Footer,
   FAQ,
+  Summarizer,
+  Demo,
 } from "../../components/index";
 
 const Homepage = () => {
@@ -26,6 +28,7 @@ const Homepage = () => {
       </div>
       <Brand />
       <Writer />
+      <Demo />
       <Features />
       <Pricing />
       <FAQ />
